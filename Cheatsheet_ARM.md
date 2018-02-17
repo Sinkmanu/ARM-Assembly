@@ -27,6 +27,7 @@ Simple cheatsheet for ARM assembly programming.
 | bne         | bne 0x104dc     | Branch if not equal (jump if not equal) |
 | bl          | bl 0x104dc      | Branch with link (call function)        |
 | b           | b 0x104dc       | Branch (Jump)                           |
+| bx	      | bx r3           | Branch and exchange instruction set     |
 | beq         | beq 0x104dc     | Branch if equal (jump if equal)         |
 | swi         | swi 0           | Software Interruption                   |
 | add         | add fp, sp, 4   | Add                                     |
