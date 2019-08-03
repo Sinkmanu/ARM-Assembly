@@ -6,10 +6,13 @@ Simple cheatsheet for ARM assembly programming.
 
 #### Registers
 
-| Register(s) | Description                              |
-| ----------- | ---------------------------------------- |
-| r0-r12      | General purpose                          |
-| r13         | Stack pointer                            |
+| Register(s) | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| r0-r3       | Parameters and return values (caller-saved registers)        |
+| r4-r10      | Callee-saved register (non-volatile registers)               |
+| r11         | Frame pointer (Also a callee-save register)                  |
+| r12         | Intra-Procedure-call scratch register                        |
+| r13         | Stack pointer                                                |
 | r14         | Link register. Store the address before to branch to a function to continue after function return. |
 | r15         | Program counter. Store the address of the next instruction to be executed. |
 
